@@ -1,0 +1,189 @@
+body {
+	margin: 20px;
+	background-color: #02010a;
+	font-family: 'Dancing Script';font-size: 22px;
+}
+header h1{
+	padding: 30px;
+	background-color: #5b7989;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: white;
+	text-align: left;
+	text-shadow: 2px 2px #02010a;
+	margin: 0;
+}
+
+#menu-principal {
+	font-size: 20px;
+	text-align: right;
+	text-shadow: none;
+	padding: 5px;
+	word-spacing: 10px;
+}
+a {
+	color: white;
+}
+.nounderline {
+	text-decoration: none;
+}
+
+section {
+	background-color: #82c3a6;
+}
+
+#contenedorpaisajes {
+	padding: 40px;
+	margin: 0px;
+	background-color: #d5c75f;
+}
+.contenedorpaisajes1 {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 40px;
+}
+.contenedorpaisajes2 {
+	display: flex;
+	flex-direction: row;
+}
+.paisaje {
+	width: 33%;
+}
+#paisaje1 {
+	filter: blur(10px);
+}
+#paisaje2, #paisaje4, #paisaje6 {
+	filter: grayscale(100%);
+}
+#paisaje3 {
+	filter: sepia(90%);
+}
+
+footer {
+	background-color: #C6d5c5;
+	padding: 20px;
+	text-align: center;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.contenedorprincipal {
+	padding: 35px;
+}
+
+.contenedor {
+	display: flex;
+	flex-direction: row;
+}
+.subcontenedor1 {
+	width: 47%;
+}
+.subcontenedor2 {
+	width: 53%;
+}
+
+img{
+	border: 2px solid white;
+}
+
+@-webkit-keyframes spin {
+        from {
+            -webkit-transform: rotate(0deg);
+        } to {
+            -webkit-transform: rotate(10deg);
+        }
+    }
+#imagen1:hover {
+	animation: spin 2s;
+}
+@-webkit-keyframes move {
+        from {
+            -webkit-transform: translate(0px,0px);
+        } to {
+            -webkit-transform: translate(20px,-5px);
+        }
+    }
+#imagen2:hover {
+			animation: move 2s;
+		}
+
+@keyframes animacion{
+		0%{
+		margin-top: 150%;
+	}
+		60%{
+		margin-top: -5%;
+	}
+		100%{
+		margin-top: 0%;
+	}
+}
+body{
+	animation-name: animacion;
+	animation-duration: 3s;
+}
+
+.center {
+    display: block;
+		margin-left: auto;
+		margin-right: auto;
+}
+#contenido2 {
+	padding: 35px;
+	margin: 0px;
+	text-align: center;
+	background-color: #d5c75f;
+}
+.contenedorinferior {
+	font-size: 25px;
+	display: flex;
+	flex-direction: row;
+}
+#bloque {
+	width: 25%;
+	text-align: left;
+	padding: 10px;
+}
+
+@media all and (max-width:900px){
+	header h1 {
+		text-align: center;
+	}
+	#menu-principal {
+		width: 100%;
+		text-align: center;
+		padding-top: 30px;
+	}
+	#contenido1 {
+		width: 100%;
+	}
+	.contenedor {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	#contenedorpaisajes {
+		width: 100%;
+		padding: 0;
+	}
+	.contenedorpaisajes1, .contenedorpaisajes2 {
+		display: flex;
+		flex-direction: column;
+	}
+	.paisaje {
+		width: 100%;
+		padding: 40px;
+	}
+
+	.subcontenedor1, .subcontenedor2 {
+		width: 100%;
+	}
+	.contenedorinferior {
+		display: flex;
+		flex-direction: column;
+	}
+	#bloque {
+		width: 100%;
+		text-align: left;
+	}
+}
